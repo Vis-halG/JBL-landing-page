@@ -10,24 +10,29 @@
     body {
       margin: 0;
       padding: 0;
-      height: 100vh;
+      /* height: 100vh;  <-- removed */
+    }
+
+    spline-viewer {
+      display: block;
+      width: 100%;
+      height: 150vh;     /* allows mobile scroll */
+      touch-action: pan-y;
     }
   </style>
 </head>
 
 <body>
 
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@splinetool/viewer@1.2.6/build/spline-viewer.js" async>
+  <script type="module"
+    src="https://cdn.jsdelivr.net/npm/@splinetool/viewer@1.2.6/build/spline-viewer.js" async>
   </script>
 
-<spline-viewer 
-    touch-action="pan-y"
-    allow-touch-events
-    url="https://prod.spline.design/jqtWOfGxw-cb8nxh/scene.splinecode">
-</spline-viewer>
+  <spline-viewer 
+      allow-touch-events
+      url="https://prod.spline.design/jqtWOfGxw-cb8nxh/scene.splinecode">
+  </spline-viewer>
 
-
-  
 </body>
 
 </html>
