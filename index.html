@@ -10,13 +10,13 @@
     body {
       margin: 0;
       padding: 0;
-      height: 100vh; 
+      min-height: 100vh;
     }
 
     spline-viewer {
       display: block;
       width: 100%;
-      /* height: 150vh;  */
+      height: 100vh; 
       touch-action: pan-y;
     }
   </style>
@@ -28,9 +28,9 @@
     src="https://cdn.jsdelivr.net/npm/@splinetool/viewer@1.2.6/build/spline-viewer.js" async>
   </script>
 
-  <spline-viewer 
-      allow-touch-events
-      url="https://prod.spline.design/jqtWOfGxw-cb8nxh/scene.splinecode">
+  <spline-viewer
+    allow-touch-events
+    url="https://prod.spline.design/jqtWOfGxw-cb8nxh/scene.splinecode">
   </spline-viewer>
 
 </body>
